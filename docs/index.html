@@ -17,19 +17,19 @@
       }
     </style>
   </head>
-  <body class="loading">
+  <body class="loading sidebar-toggle-chevron">
     <div id="app"></div>
 
     <!-- Configuration -->
     <script>
       window.$docsify = {
-        logo: '/_media/logo_bikenetkit.svg',
+        logo: '_media/logo_bikenetkit.svg',
         name: true, // inferred from <title>
         nameLink: 'https://bikenetkit.org',
         repo: 'https://github.com/BikeNetKit',
         search: 'auto',
         plugins: [
-          EditOnGithubPlugin.create(docBase, docEditBase, title)
+          EditOnGithubPlugin.create('https://github.com/BikeNetKit/faq.bikenetkit.org/tree/main/docs')
         ]
       };
     </script>
