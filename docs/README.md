@@ -3,6 +3,8 @@ Frequently asked questions about [BikeNetKit](https://bikenetkit.org/).
 
 # General FAQ
 
+General questions about the BikeNetKit project.
+
 ## What is BikeNetKit?
 BikeNetKit is a collection of free, open-source Python software tools to help plan and develop bicycle networks, developed collaboratively at [github.com/BikeNetKit](https://github.com/BikeNetKit). It comes with an interactive visualization platform at [bikenetkit.org](https://bikenetkit.org/).
 
@@ -84,6 +86,35 @@ Being aware of the burdens of open-source maintenance, we would like to build a 
 
 # Visualization FAQ
 
+Questions about the visualization runnning at [bikenekit.org](https://bikenetkit.org/).
+
+## How did you select the cities?
+We chose all European cities with more than 100,000 people. Some did not work out for technical reasons.
+
+<details>
+<summary><i>Advanced answer for planners & experts</i></summary>
+<output data-lang="For experts">
+
+We started from the aim to include all cities in all non-transcontinental European countries with a population of at least 100,000, plus capitals and the partner cities from our [*JUST STREETS* EU project](https://www.just-streets.eu/).
+
+The process of selecting, checking, and acquiring city data took around 2 months, [documented openly in our *dataexport repository*](https://github.com/BikeNetKit/dataexport). For initial city selection we relied on the United Nations Demographic Yearbook 2022. The next, most time-intensive step was manual comparison of administrative boundaries available on OSM with boundaries on Google maps for validation. 
+
+For several dozen cities no fitting boundary could be found on OSM. We later spent some more time aiming to find fitting boundaries from national repositories, with mixed results. As a consequence, in the order of 100 cities that we would have liked to include had to be discarded, especially in Italy and Spain.
+
+Finally, some micro-nation capitals like Monaco or Vatican City had to be discarded as they were too small to yield meaningful results.
+</output>
+</details>
+
+## My city isn't included. Can you add it?
+Although we are at the limit of the amount of cities that are technically feasible to include on [bikenekit.org](https://bikenetkit.org/), we are open for suggestions if there are good reasons.
+
+<details>
+<summary><i>Advanced answer for planners & experts</i></summary>
+<output data-lang="For experts">
+If you know especially of batches of reliable Italian and Spanish city boundaries, in a higher than sqkm resolution, that we did not already try to find in our [*dataexport repository*](https://github.com/BikeNetKit/dataexport/tree/main/cities/development), please let us know. 
+</output>
+</details>
+
 ## Why does bikenekit.org show weird results for some cities?
 The platform [bikenekit.org](https://bikenetkit.org/) is built on map data that can contain some mistakes. Also, the visualizations were built for over 400 cities automatically, so they were not all double-checked by hand. An urban planner could use BikeNetKit with their own data sets and expertise to fix such issues and produce better results.
 
@@ -101,15 +132,18 @@ There are several reasons why some results can look "weird".
 </details>
 
 # Technical FAQ
+Questions that are of more technical nature.
 
 ## What is a bicycle network?
-A bike network is a collection of protected bike lanes or car-free streets on which everyone feels safe to cycle.
+A bike network is a collection of protected bike lanes or car-free streets on which everyone feels safe to cycle. Painted bike lanes do not count.
 
 <details>
 <summary><i>Advanced answer for planners & experts</i></summary>
 <output data-lang="For experts">
 
-There is no generally agreed definition of a bicycle network. However, having pioneered the field, we have a good understanding of the nuances: Here we define it broadly as the set of infrastructure elements (implemented by physical and/or legal means) which allows people of all ages and demographics to safely cycle - both subjectively and objectively. One necessary prerequisite for such infrastructure is practically no mixing with vehicular traffic.  
+There is no generally agreed definition of a bicycle network. However, having pioneered the field, we have a good understanding of the nuances: Here we define it broadly as the set of infrastructure elements (implemented by physical and/or legal means) which allows people of all ages and demographics to safely cycle - both subjectively and objectively. One necessary prerequisite for such infrastructure is practically no mixing with vehicular traffic. 
+
+Due to this requirement, and in line with the cycling safety literature, we do not consider painted bike lanes or sharrows as bicycle infrastructure. However, streets with very low levels of traffic stress or very low speed limits could be considered good enough infrastructure for cycling even if they do not provide explicit protection from vehicles. BikeNetKit does not consider levels of traffic stress or speed limits, but provides the user configurability to custom-define or import such data.
 
 Because this infrastructure often consists of pieces connecting places, one can think of it as a network where nodes can be intersections or places of interest and links are the infrastructure pieces inbetween them.
 </output>
@@ -165,13 +199,13 @@ If you would like to use BikeNetKit for such concrete tasks but run into limitat
 
 
 ## How did you evaluate BikeNetKit's results, for example with Strava data of cyclist flows?
-Our research evaluated BikeNetKit's tools as well as we could. In general, we aim to actively build better cities for people instead of building better streets for cars.
+Our research evaluated BikeNetKit's tools as well as we could. In general, we aim to actively build better cities for people and to avoid following a car-centric mindset.
 
 <details>
 <summary><i>Advanced answer for planners & experts</i></summary>
 <output data-lang="For experts">
 
-Such cyclist mobility data is a reflection of the existing underlying cycling infrastructure (or lack of it). It is thus carrying strong survivorship bias, apart from other biases. Therefore, such data cannot be used for evaluation. It is not the point of BikeNetKit to reinforce the existing status quo, but to fix or extend existing infrastructure, or to propose good infrastructure from scratch. BikeNetKit's approach thus follows [the OECD's recommendation](https://www.oecd.org/en/publications/transport-strategies-for-net-zero-systems-by-design_0a20f779-en.html) to replace the outdated "predict and provide" planning paradigm with the vision-led "decide and provide" principle.  
+Such cyclist mobility data is a reflection of the existing underlying cycling infrastructure (or lack of it). It is thus carrying strong survivorship bias, apart from other biases. Therefore, such data cannot be used for evaluation. It is not the point of BikeNetKit to reinforce the existing car-centric status quo, but to fix or extend existing infrastructure, or to propose good infrastructure from scratch. BikeNetKit's approach thus follows [the OECD's recommendation](https://www.oecd.org/en/publications/transport-strategies-for-net-zero-systems-by-design_0a20f779-en.html) to replace the outdated "predict and provide" planning paradigm with the vision-led "decide and provide" principle.  
 
 That being said, we have attempted validations of our approaches in [our research](#what-is-your-expertise-on-the-topic) whenever possible, for example showing that GrowBikeNet indeed recreates well the existing bicycle network in Copenhagen, or that FixBikeNet indeed tends to suggest filling gaps where citizens ask for it. For this reason, some tools of BikeNetKit allow the incorporation of custom data (like mobility or citizen surveys) to shape their results.
 </output>
