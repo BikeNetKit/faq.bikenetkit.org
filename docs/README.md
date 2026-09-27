@@ -84,6 +84,35 @@ Being aware of the burdens of open-source maintenance, we would like to build a 
 </output>
 </details>
 
+## What is your expertise on the topic?
+Since 2019 we have pioneered a *Science of Bicycle Networks*, exploring the topic from many different angles.
+
+<details>
+<summary><i>Advanced answer for planners & experts</i></summary>
+<output data-lang="For experts">
+Our key publications are:
+
+- [Sebastiao & Szell, Findings 163938 (2026)](https://doi.org/10.32866/001c.163938) 
+- [Sebastiao et al, Appl Net Sci (2026)](https://link.springer.com/article/10.1007/s41109-026-00792-5) 
+- [Szell, Vybornova & Vierø, arxiv:2604.07029 (2026)](https://arxiv.org/abs/2604.07029)
+- [Vybornova et al, EPB 52 (2025)](https://journals.sagepub.com/doi/10.1177/23998083251355999)
+- [Vierø & Szell, Geog Anal 57 (2025)](https://onlinelibrary.wiley.com/doi/10.1111/gean.12400)
+- [Lonardi, Szell & De Bacco, R Soc Int 22 (2025)](https://royalsocietypublishing.org/doi/10.1098/rsif.2024.0532)
+- [Wolf, Vierø & Szell, Sci Rep 15 (2025)](https://www.nature.com/articles/s41598-025-97200-2)
+- [Vierø, Vybornova & Szell, EPB 51 (2024)](https://journals.sagepub.com/doi/10.1177/23998083231184471)
+- [Büth, Vybornova & Szell, JOSS 9 (2024)](https://joss.theoj.org/papers/10.21105/joss.06798)
+- [Folco et al, EPB 50 (2023)](https://doi.org/10.1177/23998083221135611)
+- [Vybornova et al, Geog Anal 55 (2023)](https://onlinelibrary.wiley.com/doi/epdf/10.1111/gean.12324)
+- [Szell et al, Sci Rep 12 (2022)](https://www.nature.com/articles/s41598-022-10783-y)
+- [Breum, Kostic & Szell, Findings 56683 (2022)](https://findingspress.org/article/56683-computational-desire-line-analysis-of-cyclists-on-the-dybbolsbro-intersection-in-copenhagen)
+- [Natera et al, R Soc Open Sci 7 (2020)](https://royalsocietypublishing.org/doi/10.1098/rsos.201130)
+
+Our research builds on planning guidelines like the Dutch CROW Design manual for bicycle traffic, and was performed in collaboration with practitioners such as [Dansk Kyst- og Naturturisme](https://www.kystognaturturisme.dk/) or urban planners from different cities in the EU Horizon Project [JUST STREETS](https://www.just-streets.eu/).  
+
+Funders of this research include: The Danish Ministry of Transport, the EU Horizon Project [JUST STREETS](https://www.just-streets.eu/). The development of BikeNetKit is now also funded by the Innovation Fund Denmark.
+</output>
+</details>
+
 # Visualization FAQ
 
 Questions about the visualization runnning at [bikenekit.org](https://bikenetkit.org/).
@@ -111,6 +140,7 @@ Although we are at the limit of the amount of cities that are technically feasib
 <details>
 <summary><i>Advanced answer for planners & experts</i></summary>
 <output data-lang="For experts">
+
 If you know especially of batches of reliable Italian and Spanish city boundaries, in a higher than sqkm resolution, that we did not already try to find in our [*dataexport repository*](https://github.com/BikeNetKit/dataexport/tree/main/cities/development), please let us know. 
 </output>
 </details>
@@ -235,34 +265,5 @@ No, and it is not really necessary because building better bike networks -if don
 <summary><i>Advanced answer for planners & experts</i></summary>
 <output data-lang="For experts">
 No, that is not the point of BikeNetKit and would go beyond its scope; please see the previous answer. That being said, some of our research looked into potential effects of bicycle network growth on vehicular transport. However, such short-term flow-based predictions are not suited here, as they are easily overtrumped by behavioral effects explained above.
-</output>
-</details>
-
-## What is your expertise on the topic?
-Since 2019 we have pioneered a *Science of Bicycle Networks*, exploring the topic from many different angles.
-
-<details>
-<summary><i>Advanced answer for planners & experts</i></summary>
-<output data-lang="For experts">
-Our key publications are:
-
-- [Sebastiao & Szell, Findings 163938 (2026)](https://doi.org/10.32866/001c.163938) 
-- [Sebastiao et al, Appl Net Sci (2026)](https://link.springer.com/article/10.1007/s41109-026-00792-5) 
-- [Szell, Vybornova & Vierø, arxiv:2604.07029 (2026)](https://arxiv.org/abs/2604.07029)
-- [Vybornova et al, EPB 52 (2025)](https://journals.sagepub.com/doi/10.1177/23998083251355999)
-- [Vierø & Szell, Geog Anal 57 (2025)](https://onlinelibrary.wiley.com/doi/10.1111/gean.12400)
-- [Lonardi, Szell & De Bacco, R Soc Int 22 (2025)](https://royalsocietypublishing.org/doi/10.1098/rsif.2024.0532)
-- [Wolf, Vierø & Szell, Sci Rep 15 (2025)](https://www.nature.com/articles/s41598-025-97200-2)
-- [Vierø, Vybornova & Szell, EPB 51 (2024)](https://journals.sagepub.com/doi/10.1177/23998083231184471)
-- [Büth, Vybornova & Szell, JOSS 9 (2024)](https://joss.theoj.org/papers/10.21105/joss.06798)
-- [Folco et al, EPB 50 (2023)](https://doi.org/10.1177/23998083221135611)
-- [Vybornova et al, Geog Anal 55 (2023)](https://onlinelibrary.wiley.com/doi/epdf/10.1111/gean.12324)
-- [Szell et al, Sci Rep 12 (2022)](https://www.nature.com/articles/s41598-022-10783-y)
-- [Breum, Kostic & Szell, Findings 56683 (2022)](https://findingspress.org/article/56683-computational-desire-line-analysis-of-cyclists-on-the-dybbolsbro-intersection-in-copenhagen)
-- [Natera et al, R Soc Open Sci 7 (2020)](https://royalsocietypublishing.org/doi/10.1098/rsos.201130)
-
-Our research builds on planning guidelines like the Dutch CROW Design manual for bicycle traffic, and was performed in collaboration with practitioners such as [Dansk Kyst- og Naturturisme](https://www.kystognaturturisme.dk/) or urban planners from different cities in the EU Horizon Project [JUST STREETS](https://www.just-streets.eu/).  
-
-Funders of this research include: The Danish Ministry of Transport, the EU Horizon Project [JUST STREETS](https://www.just-streets.eu/). The development of BikeNetKit is now also funded by the Innovation Fund Denmark.
 </output>
 </details>
