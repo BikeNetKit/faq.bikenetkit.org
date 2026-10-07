@@ -9,7 +9,7 @@ General questions about the BikeNetKit project.
 BikeNetKit is a collection of free, open-source Python software tools to help plan and develop bicycle networks, developed collaboratively at [github.com/BikeNetKit](https://github.com/BikeNetKit). It comes with an interactive visualization platform at [bikenetkit.org](https://bikenetkit.org/).
 
 ## Why does BikeNetKit exist?
-We developed BikeNetKit because most cities do not have a well-connected network of protected bike lanes, and our toolkit helps designing and visualizing them.
+We developed BikeNetKit because most cities do not have a well-connected network of safe space for cycling, and our toolkit helps designing and visualizing it.
 
 <details>
 <summary><i>Advanced answer for planners & experts</i></summary>
@@ -69,7 +69,7 @@ No, BikeNetKit is just a tool that needs human oversight.
 <details>
 <summary><i>Advanced answer for planners & experts</i></summary>
 <output data-lang="For experts">
-It is not the aspiration of BikeNetKit to replace human planners. We do not think algorithmic design should be competing with manual approaches - rather it should be complementing them. There always has to be human judgement "in the loop", because such human, local domain knowledge is crucial when designing systems for other humans.
+It is not the aspiration of BikeNetKit to replace human planners. We do not think algorithmic design should be competing with manual approaches - rather it should be complementing them. There always has to be human judgement "in the loop", because such human, local domain knowledge is crucial when designing systems for other humans. BikeNetKit also doesn't use any "AI" - just classic algorithms.
 </output>
 </details>
 
@@ -131,6 +131,8 @@ The process of selecting, checking, and acquiring city data took around 2 months
 For several dozen cities no fitting boundary could be found on OSM. We later spent some more time aiming to find fitting boundaries from national repositories, with mixed results. As a consequence, in the order of 100 cities that we would have liked to include had to be discarded, especially in Italy and Spain.
 
 Finally, some micro-nation capitals like Monaco or Vatican City had to be discarded as they were too small to yield meaningful results.
+
+This answer is just about the selection of cities in the [bikenekit.org](https://bikenetkit.org/) visualization - the underlying Python tools are designed to work on any city or custom study area.
 </output>
 </details>
 
@@ -165,7 +167,7 @@ There are several reasons why some results can look "weird".
 Questions that are of more technical nature.
 
 ## What is a bicycle network?
-A bike network is a collection of protected bike lanes or car-free streets on which everyone feels safe to cycle. Painted bike lanes do not count.
+A bike network is a collection of protected bike lanes or car-free streets on which everyone feels safe to cycle. Painted bike lanes don't count.
 
 <details>
 <summary><i>Advanced answer for planners & experts</i></summary>
@@ -223,10 +225,24 @@ BikeNetKit's goal is to be useful for planning real bike networks.
 
 The original raw algorithms behind some of BikeNetKit's software was not useful for concrete planning tasks, as it provided statistical, unrefined outputs on a city-wide scale without an aspiration for concrete recommendations. However, one goal of BikeNetKit is to expand those original algorithms into useful tools that allow the incorporation of local knowledge and data, and of tweaking details, in order to become useful for concrete planning tasks.  
 
-If you would like to use BikeNetKit for such concrete tasks but run into limitations, please let us know! We would love to improve our software to be as useful as possible.
+If you would like to use BikeNetKit for such concrete tasks but run into limitations, please let us know, or help develop them! We would love to improve the software to be as useful as possible.
 </output>
 </details>
 
+## Does BikeNetKit account for slopes, traffic flows, population, and other such factors?
+By default BikeNetKit does not account for many such factors yet. However, some of these can be imported into BikeNetKit's tools, some are planned, and we are always open to improve.
+
+<details>
+<summary><i>Advanced answer for planners & experts</i></summary>
+<output data-lang="For experts">
+
+Although BikeNetKit strives to be useful for planning, it has to prioritize certain features. BikeNetKit's focus is on connectivity and network structure, and it is not necessarily the goal of BikeNetKit to spit out perfect networks. Planners must be aware of the tool's limitations, and expect having to postprocess some of BikeNetKit's results, for exampe with GIS software like [QGIS](https://qgis.org/).
+
+That being said, we strive for BikeNetKit to be able to import custom data sets that are useful for planning. Also, some of our tools can already account for some non-structural factors, like superblockify for population density. More such features are planned.
+
+If you would like to use BikeNetKit for concrete planning tasks but run into limitations, please let us know, or help develop them! We would love to improve the software to be as useful as possible.
+</output>
+</details>
 
 ## How did you evaluate BikeNetKit's results, for example with Strava data of cyclist flows?
 Our research evaluated BikeNetKit's tools as well as we could. In general, we aim to actively build better cities for people and to avoid following a car-centric mindset.
