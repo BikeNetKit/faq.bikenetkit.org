@@ -163,6 +163,25 @@ There are several reasons why some results can look "weird".
 </output>
 </details>
 
+## What is the meaning of importance or gap severity?
+Importance and gap severity are the metrics we calculate for links in GrowBikeNet and FixBikeNet, respectively, to show which links are more important, relative to other links in the same city. A link is more important when it enables more people to cycle safely.
+
+<details>
+<summary><i>Advanced answer for planners & experts</i></summary>
+<output data-lang="For experts">
+
+By default these metrics are based on betweenness centrality, which is a proxy for (cyclist) flow. It assumes equal flow between all pairs of intersections in the city. For GrowBikeNet, betweenness can be replaced by closeness, which measures how close a link is to the network's center.
+
+If `v` is betweenness or closeness, then it is transformed for the visualization as such:
+
+```
+floor = min if min > 0, else max / 10 000
+importance = round( 1 + 9 · (ln v − ln floor) / (ln max − ln floor) ),  v clamped to [floor, max]
+```
+Similarly for gap severity. For more details, please see the corresponding scientific papers.
+</output>
+</details>
+
 # Technical FAQ
 Questions that are of more technical nature.
 
