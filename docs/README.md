@@ -176,7 +176,8 @@ If `v` is betweenness or closeness, then it is transformed for the visualization
 
 ```
 floor = min if min > 0, else max / 10 000
-importance = round( 1 + 9 · (ln v − ln floor) / (ln max − ln floor) ),  v clamped to [floor, max]
+importance = round( 1 + 9 · (ln v − ln floor) / (ln max − ln floor) ),
+v clamped to [floor, max]
 ```
 Similarly for gap severity. For more details, please see the corresponding scientific papers.
 </output>
