@@ -46,6 +46,7 @@ As a citizen, you can help us spread the word:
 
 - Follow us on social media: [Mastodon](https://fosstodon.org/@bikenetkit) • [BlueSky](https://bsky.app/profile/bikenetkit.bsky.social) • [LinkedIn](https://www.linkedin.com/company/bikenetkit)
 - Post about BikeNetKit on social media or otherwise write about it. We recommend using the hashtag *#BikeNetKit*.
+- Share our [YouTube videos](https://www.youtube.com/@BikeNetKit)
 - Show it to a politician or planner in your city, or to other people who (should) care about cycling.
 
 <details>
@@ -182,6 +183,17 @@ v clamped to [floor, max]
 Similarly for gap severity. For more details, please see the corresponding scientific papers.
 </output>
 </details>
+
+## How do I embed a map on my website?
+Below you find an example HTML code that you can copy-paste into your website and adjust:
+
+```
+<iframe src="https://bikenetkit.org/embed/sortbikenet/paris_fr/dual_betweenness/from_scratch?bbox=2.15528,48.80524,2.40867,48.90269" title="BikeNetKit" width="800" height="540"></iframe>
+```
+
+The link after `src=` is the link that opens when you press "Embed this view" on the map:
+
+![Embed this view](static/embed_view.png)
 
 # Technical FAQ
 Questions that are of more technical nature.
