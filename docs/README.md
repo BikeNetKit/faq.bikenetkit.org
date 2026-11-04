@@ -137,12 +137,6 @@ This answer is just about the selection of cities in the [bikenekit.org](https:/
 </output>
 </details>
 
-## Will you add US cities?
-We will not add US cities to [bikenekit.org](https://bikenetkit.org/) for the foreseeable future, for the same reasons we do not consider countries like Russia or North Korea - sorry.
-
-However, anybody is free to fork the bikenetkit visualization and set it up themselves with cities from any country. Also the underlying Python software can be run for any city from any country.
-
-
 ## My city isn't included. Can you add it?
 Although we are at the limit of the amount of cities that are technically feasible to include on [bikenekit.org](https://bikenetkit.org/), we are open for suggestions if there are good reasons.
 
