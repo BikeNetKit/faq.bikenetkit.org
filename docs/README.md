@@ -288,6 +288,7 @@ We cannot give a definitive threshold, but it should be mapped well enough and b
 <details>
 <summary><i>Advanced answer for planners & experts</i></summary>
 <output data-lang="For experts">
+
 We have developed the tool [BikeDNA](https://github.com/anerv/BikeDNA) that you can use beforehand to check for data completeness of bicycle network data.
 
 See also these helpful papers:  
