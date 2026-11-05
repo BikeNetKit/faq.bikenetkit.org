@@ -282,6 +282,22 @@ If you would like to use BikeNetKit for concrete planning tasks but run into lim
 </output>
 </details>
 
+## How well must a city be mapped on OpenStreetMap before the tools may be applied?
+We cannot give a definitive threshold, but it should be mapped well enough and be of high quality - which is the case for most places in the Global North.
+
+<details>
+<summary><i>Advanced answer for planners & experts</i></summary>
+<output data-lang="For experts">
+We have developed the tool [BikeDNA](https://github.com/anerv/BikeDNA) that you can use beforehand to check for data completeness of bicycle network data.
+
+See also these helpful papers:  
+
+- [BikeDNA: A tool for bicycle infrastructure data and network assessment](https://journals.sagepub.com/doi/abs/10.1177/23998083231184471)
+- [The world’s user-generated road map is more than 80% complete](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180698)  
+- [Using OpenStreetMap to inventory bicycle infrastructure: A comparison with open data from cities](https://www.tandfonline.com/doi/abs/10.1080/15568318.2018.1519746)
+</output>
+</details>
+
 ## How did you evaluate BikeNetKit's results, for example with Strava data of cyclist flows?
 Our research evaluated BikeNetKit's tools as well as we could. In general, we aim to actively build better cities for people and to avoid following a car-centric mindset.
 
