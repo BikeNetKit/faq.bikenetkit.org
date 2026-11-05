@@ -210,6 +210,12 @@ There is no generally agreed definition of a bicycle network. However, having pi
 Due to this requirement, and in line with the cycling safety literature, we do not consider painted bike lanes or sharrows as bicycle infrastructure. However, streets with very low levels of traffic stress or very low speed limits could be considered good enough infrastructure for cycling even if they do not provide explicit protection from vehicles. BikeNetKit does not consider levels of traffic stress or speed limits, but provides the user configurability to custom-define or import such data.
 
 Because this infrastructure often consists of pieces connecting places, one can think of it as a network where nodes can be intersections or places of interest and links are the infrastructure pieces inbetween them.
+
+The default definition of bicycle networks by the BikeNetKit tools, if data is fetched from OpenStreetMap, is set in [BikeNetLib's OSM module](https://github.com/BikeNetKit/BikeNetLib/blob/main/bikenetlib/osm.py). This is a custom filter that we have polished over several years, that selects those street network [tags/elements which provide safe cycling](https://wiki.openstreetmap.org/wiki/Bicycle). 
+
+For this default custom filter we made some conscious decisions. For example, we want cycling to work for children too, not just fit adults. So, streets that allow cars to drive 30 km/h without any added protection for cyclists are not considered safely cyclable by default, contrary to some legal definitions or planning guidelines - such definitions or guidelines cannot be applied in an unquestioned way, as they arise from a car-centric planning culture and often simply do not consider children (or other demographic groups). 
+
+In any case, these are just the default values which users of the Python software can modify in any way they see fit by redefining the `bikenetlib.osm` constants. We are very open to update our default values following well argued expert arguments that consider safe cycling for all possible demographic groups.
 </output>
 </details>
 
@@ -268,7 +274,7 @@ By default BikeNetKit does not account for many such factors yet. However, some 
 <summary><i>Advanced answer for planners & experts</i></summary>
 <output data-lang="For experts">
 
-Although BikeNetKit strives to be useful for planning, it has to prioritize certain features. BikeNetKit's focus is on connectivity and network structure, and it is not necessarily the goal of BikeNetKit to spit out perfect networks. Planners must be aware of the tool's limitations, and expect having to postprocess some of BikeNetKit's results, for exampe with GIS software like [QGIS](https://qgis.org/).
+Although BikeNetKit strives to be useful for planning, it has to prioritize certain features. BikeNetKit's focus is on connectivity and network structure. Its ambition is not to spit out perfect networks that account for all imaginable factors. Planners must be aware of the tool's limitations, and expect having to postprocess some of BikeNetKit's results, for exampe with GIS software like [QGIS](https://qgis.org/).
 
 That being said, we strive for BikeNetKit to be able to import custom data sets that are useful for planning. Also, some of our tools can already account for some non-structural factors, like superblockify for population density. More such features are planned.
 
