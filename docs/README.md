@@ -267,6 +267,20 @@ If you would like to use BikeNetKit for such concrete tasks but run into limitat
 </output>
 </details>
 
+## How should new links proposed by BikeNetKit be implemented in practice?
+We leave this up to the urban planners who have the local knowledge. Ideally the proposed streets should be opened to people, meaning closed to cars.
+
+<details>
+<summary><i>Advanced answer for planners & experts</i></summary>
+<output data-lang="For experts">
+
+There can be many ways how a car-centric street can be retrofitted into human-centric infrastructure. Most streets in a city do not need to be open to cars (except for emergency or special access). Therefore, ideally the suggested streets should be opened to people instead and made car-free. Wherever that is not possible, alternatives are, for example, bicycle streets or physically separated bicycle tracks. 
+
+We consciously leave the concrete implementation vague and do not prescribe any particular street-level approach, as that depends on context and should be up to decide for the experts with local knowledge. Also, planners must be aware of BikeNetKit's limitations, and expect having to postprocess some of BikeNetKit's results, for example with GIS software like [QGIS](https://qgis.org/).
+</output>
+</details>
+
+
 ## Does BikeNetKit account for slopes, traffic flows, population, and other such factors?
 By default BikeNetKit does not account for many such factors yet. However, some of these can be imported into BikeNetKit's tools, some are planned, and we are always open to improve.
 
@@ -274,7 +288,7 @@ By default BikeNetKit does not account for many such factors yet. However, some 
 <summary><i>Advanced answer for planners & experts</i></summary>
 <output data-lang="For experts">
 
-Although BikeNetKit strives to be useful for planning, it has to prioritize certain features. BikeNetKit's focus is on connectivity and network structure. Its ambition is not to spit out perfect networks that account for all imaginable factors. Planners must be aware of the tool's limitations, and expect having to postprocess some of BikeNetKit's results, for exampe with GIS software like [QGIS](https://qgis.org/).
+Although BikeNetKit strives to be useful for planning, it has to prioritize certain features. BikeNetKit's focus is on connectivity and network structure. Its ambition is not to spit out perfect networks that account for all imaginable factors. Planners must be aware of the tool's limitations, and expect having to postprocess some of BikeNetKit's results, for example with GIS software like [QGIS](https://qgis.org/).
 
 That being said, we strive for BikeNetKit to be able to import custom data sets that are useful for planning. Also, some of our tools can already account for some non-structural factors, like superblockify for population density. More such features are planned.
 
@@ -299,21 +313,24 @@ See also these helpful papers:
 </output>
 </details>
 
+
+
+
 ## How did you evaluate BikeNetKit's results, for example with Strava data of cyclist flows?
-Our research evaluated BikeNetKit's tools as well as we could. In general, we aim to actively build better cities for people and to avoid following a car-centric mindset.
+Our research evaluated BikeNetKit's tools as well as we could. In general, we aim to actively build better cities for people and to avoid following a car-centric mindset. Such data cannot be used to evaluate BikeNetKit, but we ran validations where it was possible.
 
 <details>
 <summary><i>Advanced answer for planners & experts</i></summary>
 <output data-lang="For experts">
 
-Such cyclist mobility data is a reflection of the existing underlying cycling infrastructure (or lack of it). It is thus carrying strong survivorship bias, apart from other biases. Therefore, such data cannot be used for evaluation. It is not the point of BikeNetKit to reinforce the existing car-centric status quo, but to fix or extend existing infrastructure, or to propose good infrastructure from scratch. BikeNetKit's approach thus follows [the OECD's recommendation](https://www.oecd.org/en/publications/transport-strategies-for-net-zero-systems-by-design_0a20f779-en.html) to replace the outdated "predict and provide" planning paradigm with the vision-led "decide and provide" principle.  
+Such cyclist mobility data is a reflection of the existing underlying cycling infrastructure (or lack of it). It is thus carrying strong survivorship bias, apart from other biases. Therefore, such data cannot be used for evaluation. It is not the point of BikeNetKit to reinforce the existing car-centric status quo by wrongly predicting from existing biases, but to fix or extend existing infrastructure or to propose good infrastructure from scratch. BikeNetKit's approach thus follows [the OECD's recommendation](https://www.oecd.org/en/publications/transport-strategies-for-net-zero-systems-by-design_0a20f779-en.html) to replace the outdated "predict and provide" planning paradigm with the vision-led "decide and provide" principle.  
 
 That being said, we have attempted validations of our approaches in [our research](#what-is-your-expertise-on-the-topic) whenever possible, for example showing that GrowBikeNet indeed recreates well the existing bicycle network in Copenhagen, or that FixBikeNet indeed tends to suggest filling gaps where citizens ask for it. For this reason, some tools of BikeNetKit allow the incorporation of custom data (like mobility or citizen surveys) to shape their results.
 </output>
 </details>
 
 ## Does BikeNetKit use transport modelling?
-BikeNetKit was developed by mobility experts with a background in network science - the science of how to best connect things and places. They use the latest know-how from the field.
+BikeNetKit was developed by mobility experts with a background in network science - the science of how to best connect things and places. They use the latest know-how from the field, but without explicit use of transport modelling.
 
 <details>
 <summary><i>Advanced answer for planners & experts</i></summary>
