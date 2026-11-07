@@ -276,7 +276,7 @@ We leave this up to the urban planners who have the local knowledge. Ideally the
 
 There can be many ways how a car-centric street can be retrofitted into human-centric infrastructure. Most streets in a city do not need to be open to cars (except for emergency or special access). Therefore, ideally the suggested streets should be opened to people instead and made car-free. Wherever that is not possible, alternatives are, for example, bicycle streets or physically separated bicycle tracks. 
 
-We consciously leave the concrete implementation vague and do not prescribe any particular street-level approach, as that depends on context and should be up to decide for the experts with local knowledge. Also, planners must be aware of BikeNetKit's limitations, and expect having to postprocess some of BikeNetKit's results, for example with GIS software like [QGIS](https://qgis.org/).
+We consciously do not prescribe any particular street-level implementation, as it depends on context and should be up to decide for the experts with local knowledge. Also, planners must be aware of BikeNetKit's limitations, and expect having to postprocess some of BikeNetKit's results, for example with GIS software like [QGIS](https://qgis.org/).
 </output>
 </details>
 
