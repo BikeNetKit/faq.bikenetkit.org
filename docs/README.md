@@ -346,7 +346,7 @@ The Python tools at [github.com/BikeNetKit](https://github.com/BikeNetKit) use d
 <summary><i>Advanced answer for planners & experts</i></summary>
 <output data-lang="For experts">
 
-Under the hood, OSM data are not loaded directly from OSM but from an overpass server, which is by default our own server at [overpass.bikenetkit.org](https://overpass.bikenetkit.org). This server fetches the latest data from OSM at least daily. If you need more up to date data, you can change the overpass server, explained here: [github.com/BikeNetKit/BikeNetLib#terms-of-use](https://github.com/BikeNetKit/BikeNetLib#terms-of-use)
+Under the hood, OSM data are not loaded directly from OSM but from an overpass server, which is by default our own server at [overpass.bikenetkit.org](https://overpass.bikenetkit.org). This server fetches the latest data from OSM at least daily. If you need more up to date data or other terms of use, you can change the overpass server, explained here: [github.com/BikeNetKit/BikeNetLib#terms-of-use](https://github.com/BikeNetKit/BikeNetLib#terms-of-use)
 </output>
 </details>
 
