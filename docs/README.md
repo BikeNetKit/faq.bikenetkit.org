@@ -137,6 +137,22 @@ This answer is just about the selection of cities in the [bikenekit.org](https:/
 </output>
 </details>
 
+## Why are US cities not covered?
+The underlying Python software can be run for any city on the planet, including US cities. 
+
+Only the visualization platform [bikenekit.org](https://bikenetkit.org/) is limited to European cities. We focus on Europe because it is our home and where we are funded. With over 400 cities implemented we are at the platform's technical limits, so expanding to US cities is not feasible, sorry. Anybody can fork the platform's code though and set it up themselves to include cities from anywhere.
+
+<details>
+<summary><i>Advanced answer for planners & experts</i></summary>
+<output data-lang="For experts">
+
+Technical reasons aside, the visualization tool at [bikenekit.org](https://bikenetkit.org/) will for the foreseeable future not include US cities also for other reasons. First off, we respect all our amazing colleagues in the US. However, the US is a country that has consistently threatened military invasion and annexation of Denmark, where BikeNetKit is mainly developed, and does many worse things to destabilize the world. It is therefore not reasonable for us to cover the US under current circumstances. 
+
+If we see a clear commitment from the US to end its culture of internal and external abuse, for example to join the <a href="https://www.icc-cpi.int/">International Criminal Court</a> and to establish accountability, we are happy to reconsider this stance. Thank you for your understanding.
+</output>
+</details>
+
+
 ## My city isn't included. Can you add it?
 Although we are at the limit of the amount of cities that are technically feasible to include on [bikenekit.org](https://bikenetkit.org/), we are open for suggestions if there are good reasons.
 
