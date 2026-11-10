@@ -340,13 +340,13 @@ If you would like to use BikeNetKit for concrete planning tasks but run into lim
 ## How up to date is the OSM data behind BikeNetKit?
 The visualization platform at [bikenetkit.org](https://bikenetkit.org/) is rendering precomputed results from our Python tools with historic data from OpenStreetMap. The date is reported on top right of each tool page, for example "Data built with v0.15.0 from OpenStreetMap data of Jul 23, 2026" on top of [bikenetkit.org/growbikenet](https://bikenetkit.org/growbikenet).
 
-The Python tools at [github.com/BikeNetKit](https://github.com/BikeNetKit) use data from OpenStreetMap that is not more than a week old.
+The Python tools at [github.com/BikeNetKit](https://github.com/BikeNetKit) use data from OpenStreetMap that is not more than a day old.
 
 <details>
 <summary><i>Advanced answer for planners & experts</i></summary>
 <output data-lang="For experts">
 
-Under the hood, OSM data are not loaded directly from OSM but from an overpass server, which is by default our own server at [overpass.bikenetkit.org](https://overpass.bikenetkit.org). This server fetches the latest data from OSM at least weekly. If you need more up to date data, you can change the overpass server, explained here: [github.com/BikeNetKit/BikeNetLib#terms-of-use](https://github.com/BikeNetKit/BikeNetLib#terms-of-use)
+Under the hood, OSM data are not loaded directly from OSM but from an overpass server, which is by default our own server at [overpass.bikenetkit.org](https://overpass.bikenetkit.org). This server fetches the latest data from OSM at least daily. If you need more up to date data, you can change the overpass server, explained here: [github.com/BikeNetKit/BikeNetLib#terms-of-use](https://github.com/BikeNetKit/BikeNetLib#terms-of-use)
 </output>
 </details>
 
