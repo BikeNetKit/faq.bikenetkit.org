@@ -1,12 +1,16 @@
 # BikeNetKit FAQ {docsify-ignore}
 Frequently asked questions about [BikeNetKit](https://bikenetkit.org/).
 
+
+
 # General FAQ
 
 General questions about the BikeNetKit project.
 
+
 ## What is BikeNetKit?
 BikeNetKit is a collection of free, open-source Python software tools to help plan and develop bicycle networks, developed collaboratively at [github.com/BikeNetKit](https://github.com/BikeNetKit). It comes with an interactive visualization platform at [bikenetkit.org](https://bikenetkit.org/).
+
 
 ## Why does BikeNetKit exist?
 We developed BikeNetKit because most cities do not have a well-connected network of safe space for cycling, and our toolkit helps designing and visualizing it.
@@ -23,8 +27,10 @@ Practically, BikeNetKit exists because since 2019 [we have pioneered a *Science 
 </output>
 </details>
 
+
 ## What is the goal of BikeNetKit?
 The goal of the BikeNetKit software is to provide decision support tools to urban planners for various bicycle network planning tasks, or for proactive citizens to create a compelling vision for urban cycling in their city. Another aim is to foster future research on bicycle networks. The goal of the accompanying interactive [bikenetkit.org](https://bikenetkit.org/) platform is to visualize the software's potential, to attract policy makers and to guide users.
+
 
 ## What is the philosophy of BikeNetKit?
 BikeNetKit provides tools from the research community as a public good that city planners can use freely. These tools make it easy for planners to use their own data sets and local know-how to plan the best bike network fitting their own city.
@@ -40,6 +46,7 @@ BikeNetKit provides an alternative: It provides free, open-source software as a 
 To prevent extractive use and to keep BikeNetKit's results always transparent and reproducible, it uses the [AGPL license](https://choosealicense.com/licenses/agpl-3.0/) which ensures that all derivations of the software must disclose their source code.
 </output>
 </details>
+
 
 ## How can I help to make BikeNetKit better?
 As a citizen, you can help us spread the word:
@@ -64,6 +71,7 @@ If you are familiar with Python, please feel free to:
 </output>
 </details>
 
+
 ## Will BikeNetKit replace human planners?
 No, BikeNetKit is just a tool that needs human oversight.
 
@@ -73,6 +81,7 @@ No, BikeNetKit is just a tool that needs human oversight.
 It is not the aspiration of BikeNetKit to replace human planners. We do not think algorithmic design should be competing with manual approaches - rather it should be complementing them. There always has to be human judgement "in the loop", because such human, local domain knowledge is crucial when designing systems for other humans. BikeNetKit also doesn't use any "AI" - just classic algorithms.
 </output>
 </details>
+
 
 ## How will you maintain BikeNetKit in the long term?
 We will maintain BikeNetKit in the long term, beyond 2026, by building up a community. 
@@ -84,6 +93,7 @@ We will maintain BikeNetKit in the long term, beyond 2026, by building up a comm
 Being aware of the burdens of open-source maintenance, we would like to build a community of cycling researchers and advocates around BikeNetKit, increasing the project's [bus factor](https://en.wikipedia.org/wiki/Bus_factor) and its longevity. Apart from featuring single, well-defined tools, part of BikeNetKit is the general-purpose library [BikeNetLib](https://github.com/BikeNetKit/BikeNetLib) which aspires to offer core utilities, useful for *anybody* who wants to study or work with bicycle network data.
 </output>
 </details>
+
 
 ## What is your expertise on the topic?
 Since 2019 we have pioneered a *Science of Bicycle Networks*, exploring the topic from many different angles.
@@ -114,9 +124,12 @@ Funders of this research include: The Danish Ministry of Transport, the EU Horiz
 </output>
 </details>
 
+
+
 # Visualization FAQ
 
 Questions about the visualization runnning at [bikenekit.org](https://bikenetkit.org/).
+
 
 ## How did you select the cities?
 We chose all European cities with more than 100,000 people. Some did not work out for technical reasons.
@@ -136,6 +149,7 @@ Finally, some micro-nation capitals like Monaco or Vatican City had to be discar
 This answer is just about the selection of cities in the [bikenekit.org](https://bikenetkit.org/) visualization - the underlying Python tools are designed to work on any city or custom study area.
 </output>
 </details>
+
 
 ## Why are US cities not covered?
 The underlying Python software can be run for any city on the planet, including US cities. 
@@ -164,6 +178,7 @@ If you know especially of batches of reliable Italian and Spanish city boundarie
 </output>
 </details>
 
+
 ## Why does bikenekit.org show weird results for some cities?
 The platform [bikenekit.org](https://bikenetkit.org/) is built on map data that can contain some mistakes. Also, the visualizations were built for over 400 cities automatically, so they were not all double-checked by hand. An urban planner could use BikeNetKit with their own data sets and expertise to fix such issues and produce better results.
 
@@ -179,6 +194,7 @@ There are several reasons why some results can look "weird".
 3) It is possible that BikeNetKit could be improved, for example to update its default definition of protected bicycle infrastructure. If you can think of improvements, please let us know!
 </output>
 </details>
+
 
 ## What is the meaning of importance or gap severity?
 Importance and gap severity are the metrics we calculate for links in GrowBikeNet and FixBikeNet, respectively, to show which links are more important, relative to other links in the same city. A link is more important when it enables more people to cycle safely.
@@ -200,6 +216,7 @@ Similarly for gap severity. For more details, please see the corresponding scien
 </output>
 </details>
 
+
 ## How do I embed a map on my website?
 Below you find an example HTML code that you can copy-paste into your website and adjust:
 
@@ -211,8 +228,11 @@ The link after `src=` is the link that opens when you press "Embed this view" on
 
 ![Embed this view](static/embed_view.png)
 
+
+
 # Technical FAQ
 Questions that are of more technical nature.
+
 
 ## What is a bicycle network?
 A bike network is a collection of protected bike lanes or car-free streets on which everyone feels safe to cycle. Painted bike lanes don't count.
@@ -235,6 +255,7 @@ In any case, these are just the default values which users of the Python softwar
 </output>
 </details>
 
+
 ## When is a bicycle network functional?
 A bike network is functional if it is well-connected, reaches the whole city, and allows direct travel without having to take large detours. Most cities don't have a functional bicycle network - yet.
 
@@ -245,8 +266,8 @@ A bicycle network could be defined as "functional" if it is well connected, cove
 </output>
 </details>
 
-## Are bicycle networks a good solution?
 
+## Are bicycle networks a good solution?
 Connected, safe bike routes are well-proven to make cycling easier and safer. But bike lanes alone are not enough. Safe speeds, safe crossings and streets with less traffic matter too. **There is no one-size-fits-all solution.** Different measures can work together to make cycling safer and easier.
 
 <details>
@@ -260,6 +281,7 @@ Connected, safe bike routes are well-proven to make cycling easier and safer. Bu
 </output>
 </details>
 
+
 ## Is BikeNetKit's output realistic?
 As with many things that are politically contested, BikeNetKit's bike network designs are realistic if there is the political will to implement them. Spread the word to your politicians, and it will become more realistic!
 
@@ -269,6 +291,7 @@ As with many things that are politically contested, BikeNetKit's bike network de
 BikeNetKit's tools produce city-wide visions of how a concrete, functional bicycle network could look like. Whether such visions are "realistic" to implement within a certain timeframe is an ill-defined question, since many things can be realized if there is the political will. However, several BikeNetKit tools also provide a prioritization or ranking of the suggested measures, which directly translates into which measures to implement first, given a fixed budget, to arrive at a functional network early.
 </output>
 </details>
+
 
 ## Is BikeNetKit useful for planning concrete bicycle infrastructure?
 BikeNetKit's goal is to be useful for planning real bike networks.
@@ -282,6 +305,7 @@ The original raw algorithms behind some of BikeNetKit's software was not useful 
 If you would like to use BikeNetKit for such concrete tasks but run into limitations, please let us know, or help develop them! We would love to improve the software to be as useful as possible.
 </output>
 </details>
+
 
 ## How should new links proposed by BikeNetKit be implemented in practice?
 We leave this up to the urban planners who have the local knowledge. Ideally the proposed streets should be opened to people, meaning closed to cars.
@@ -312,6 +336,21 @@ If you would like to use BikeNetKit for concrete planning tasks but run into lim
 </output>
 </details>
 
+
+## How up to date is the OSM data behind BikeNetKit?
+The visualization platform at [bikenetkit.org](https://bikenetkit.org/) is rendering precomputed results from our Python tools with historic data from OpenStreetMap. The date is reported on top right of each tool page, for example "Data built with v0.15.0 from OpenStreetMap data of Jul 23, 2026" on top of [bikenetkit.org/growbikenet](https://bikenetkit.org/growbikenet).
+
+The Python tools at [github.com/BikeNetKit](https://github.com/BikeNetKit) use data from OpenStreetMap that is not more than a week old.
+
+<details>
+<summary><i>Advanced answer for planners & experts</i></summary>
+<output data-lang="For experts">
+
+Under the hood, OSM data are not loaded directly from OSM but from an overpass server, which is by default our own server at [https://overpass.bikenetkit.org](overpass.bikenetkit.org). This server fetches the latest data from OSM at least weekly. If you need more up to date data, you can change the overpass server, explained here: [https://github.com/BikeNetKit/BikeNetLib#terms-of-use](https://github.com/BikeNetKit/BikeNetLib#terms-of-use)
+</output>
+</details>
+
+
 ## How well must a city be mapped on OpenStreetMap before the tools may be applied?
 We cannot give a definitive threshold, but it should be mapped well enough and be of high quality - which is the case for most places in the Global North.
 
@@ -330,8 +369,6 @@ See also these helpful papers:
 </details>
 
 
-
-
 ## How did you evaluate BikeNetKit's results, for example with Strava data of cyclist flows?
 Our research evaluated BikeNetKit's tools as well as we could. In general, we aim to actively build better cities for people and to avoid following a car-centric mindset. Such data cannot be used to evaluate BikeNetKit, but we ran validations where it was possible.
 
@@ -344,6 +381,7 @@ Such cyclist mobility data is a reflection of the existing underlying cycling in
 That being said, we have attempted validations of our approaches in [our research](#what-is-your-expertise-on-the-topic) whenever possible, for example showing that GrowBikeNet indeed recreates well the existing bicycle network in Copenhagen, or that FixBikeNet indeed tends to suggest filling gaps where citizens ask for it. For this reason, some tools of BikeNetKit allow the incorporation of custom data (like mobility or citizen surveys) to shape their results.
 </output>
 </details>
+
 
 ## Does BikeNetKit use transport modelling?
 BikeNetKit was developed by mobility experts with a background in network science - the science of how to best connect things and places. They use the latest know-how from the field, but without explicit use of transport modelling.
@@ -361,6 +399,7 @@ For sustainable transport system planning, the so far prevalent "predict and pro
 That being said, some BikeNetKit tools allow to go beyond betweenness-based flow modelling, for example to import Origin-Destination data.
 </output>
 </details>
+
 
 ## Is BikeNetKit accounting for other modes of transport?
 No, and it is not really necessary because building better bike networks -if done well- leads to more people cycling, so streets become less congested automatically.
