@@ -191,7 +191,7 @@ There are several reasons why some results can look "weird".
 
 2) The platform [bikenekit.org](https://bikenetkit.org/) visualizes the results of BikeNetKit for 400+ European cities, *running the tools with their default settings*. These default settings usually produce reasonable results, but sometimes they don't because local context is missing. For example, a human user might use a BikeNetKit tool's possibilities to import custom data sets, to naturally limit the study area to a city's populated areas, to only consider a certain set of streets for bicycle network growth, or to otherwise configure the tool's settings to make the outcome more realistic.  
 
-3) It is possible that BikeNetKit could be improved, for example to update its default definition of protected bicycle infrastructure. If you can think of improvements, please let us know!
+3) It is possible that BikeNetKit could be improved, for example to update [its default definition of protected bicycle infrastructure](#what-is-a-bicycle-network). If you can think of improvements, please let us know!
 </output>
 </details>
 
