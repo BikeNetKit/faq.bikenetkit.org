@@ -128,7 +128,7 @@ Funders of this research include: The Danish Ministry of Transport, the EU Horiz
 
 # Visualization FAQ
 
-Questions about the visualization runnning at [bikenekit.org](https://bikenetkit.org/).
+Questions about the visualization runnning at [bikenetkit.org](https://bikenetkit.org/).
 
 
 ## How did you select the cities?
@@ -146,7 +146,7 @@ For several dozen cities no fitting boundary could be found on OSM. We later spe
 
 Finally, some micro-nation capitals like Monaco or Vatican City had to be discarded as they were too small to yield meaningful results.
 
-This answer is just about the selection of cities in the [bikenekit.org](https://bikenetkit.org/) visualization - the underlying Python tools are designed to work on any city or custom study area.
+This answer is just about the selection of cities in the [bikenetkit.org](https://bikenetkit.org/) visualization - the underlying Python tools are designed to work on any city or custom study area.
 </output>
 </details>
 
@@ -154,13 +154,13 @@ This answer is just about the selection of cities in the [bikenekit.org](https:/
 ## Why are US cities not covered?
 The underlying Python software can be run for any city on the planet, including US cities. 
 
-Only the visualization platform [bikenekit.org](https://bikenetkit.org/) is limited to European cities. We focus on Europe because it is our home and where we are funded. With over 400 cities implemented we are at the platform's technical limits, so expanding to US cities is not feasible, sorry. Anybody can fork the platform's code though and set it up themselves to include cities from anywhere.
+Only the visualization platform [bikenetkit.org](https://bikenetkit.org/) is limited to European cities. We focus on Europe because it is our home and where we are funded. With over 400 cities implemented we are at the platform's technical limits, so expanding to US cities is not feasible, sorry. Anybody can fork the platform's code though and set it up themselves to include cities from anywhere.
 
 <details>
 <summary><i>Advanced answer for planners & experts</i></summary>
 <output data-lang="For experts">
 
-Technical reasons aside, the visualization tool at [bikenekit.org](https://bikenetkit.org/) will for the foreseeable future not include US cities also for other reasons. First off, we respect all our amazing colleagues in the US. However, the US is a country that has consistently threatened military invasion and annexation of Denmark, where BikeNetKit is mainly developed, and does many worse things to destabilize the world. It is therefore not reasonable for us to cover the US under current circumstances. 
+Technical reasons aside, the visualization tool at [bikenetkit.org](https://bikenetkit.org/) will for the foreseeable future not include US cities also for other reasons. First off, we respect all our amazing colleagues in the US. However, the US is a country that has consistently threatened military invasion and annexation of Denmark, where BikeNetKit is mainly developed, and does many worse things to destabilize the world. It is therefore not reasonable for us to cover the US under current circumstances. 
 
 If we see a clear commitment from the US to end its culture of internal and external abuse, for example to join the <a href="https://www.icc-cpi.int/">International Criminal Court</a> and to establish accountability, we are happy to reconsider this stance. Thank you for your understanding.
 </output>
@@ -168,7 +168,7 @@ If we see a clear commitment from the US to end its culture of internal and exte
 
 
 ## My city isn't included. Can you add it?
-Although we are at the limit of the amount of cities that are technically feasible to include on [bikenekit.org](https://bikenetkit.org/), we are open for suggestions if there are good reasons.
+Although we are at the limit of the amount of cities that are technically feasible to include on [bikenetkit.org](https://bikenetkit.org/), we are open for suggestions if there are good reasons.
 
 <details>
 <summary><i>Advanced answer for planners & experts</i></summary>
@@ -179,8 +179,8 @@ If you know especially of batches of reliable Italian and Spanish city boundarie
 </details>
 
 
-## Why does bikenekit.org show weird results for some cities?
-The platform [bikenekit.org](https://bikenetkit.org/) is built on map data that can contain some mistakes. Also, the visualizations were built for over 400 cities automatically, so they were not all double-checked by hand. An urban planner could use BikeNetKit with their own data sets and expertise to fix such issues and produce better results.
+## Why does bikenetkit.org show weird results for some cities?
+The platform [bikenetkit.org](https://bikenetkit.org/) is built on map data that can contain some mistakes. Also, the visualizations were built for over 400 cities automatically, so they were not all double-checked by hand. An urban planner could use BikeNetKit with their own data sets and expertise to fix such issues and produce better results.
 
 <details>
 <summary><i>Advanced answer for planners & experts</i></summary>
@@ -189,7 +189,7 @@ There are several reasons why some results can look "weird".
 
 1) BikeNetKit relies on OpenStreetMap data which is of very high coverage and quality in Europe, but can still contain mistakes or inaccuracies. If you spot OpenStreetMap issues, please feel free to update the data set yourself and let us know - after all it is crowdsourced data.  
 
-2) The platform [bikenekit.org](https://bikenetkit.org/) visualizes the results of BikeNetKit for 400+ European cities, *running the tools with their default settings*. These default settings usually produce reasonable results, but sometimes they don't because local context is missing. For example, a human user might use a BikeNetKit tool's possibilities to import custom data sets, to naturally limit the study area to a city's populated areas, to only consider a certain set of streets for bicycle network growth, or to otherwise configure the tool's settings to make the outcome more realistic.  
+2) The platform [bikenetkit.org](https://bikenetkit.org/) visualizes the results of BikeNetKit for 400+ European cities, *running the tools with their default settings*. These default settings usually produce reasonable results, but sometimes they don't because local context is missing. For example, a human user might use a BikeNetKit tool's possibilities to import custom data sets, to naturally limit the study area to a city's populated areas, to only consider a certain set of streets for bicycle network growth, or to otherwise configure the tool's settings to make the outcome more realistic.  
 
 3) It is possible that BikeNetKit could be improved, for example to update [its default definition of protected bicycle infrastructure](#what-is-a-bicycle-network). If you can think of improvements, please let us know!
 </output>
